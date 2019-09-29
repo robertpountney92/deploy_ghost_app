@@ -4,6 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'npm --version'
+		echo "Hello there this is rob"
             }
         }
     }
