@@ -6,6 +6,7 @@ pipeline {
                 sh 'npm --version'
 		echo "Hello there this is rob"
 	    	echo "Another test"
+	    	echo "third test"
             }
         }
     }
