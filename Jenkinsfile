@@ -1,5 +1,10 @@
 pipeline {
-    agent { docker { image 'node:6.3' args '-p 3000:2368' } }
+    agent { 
+        docker { 
+            image 'node:6.3' 
+            args '-p 3000:2368' 
+        } 
+    }
     stages {
         stage('build') {
             steps {
