@@ -1,6 +1,5 @@
-!#/bin/bash
+#!/bin/bash
 #Setup jenkin in docker container
-docker pull jenkinsci/blueocean
 docker run \
   --rm \
   -d \
