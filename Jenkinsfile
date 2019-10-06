@@ -4,9 +4,14 @@ pipeline {
         stage('build') {
             steps {
                 sh 'npm --version'
-		echo "Hello there this is rob"
-	    	echo "Another test"
-	    	echo "third test"
+                sh 'npm install ghost-cli -g'
+                echo "Another test"
+                echo "third test"
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'docker version'
             }
         }
     }
